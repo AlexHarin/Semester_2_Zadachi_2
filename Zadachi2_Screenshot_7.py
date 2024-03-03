@@ -5,17 +5,14 @@ class BankAccount:
         self.balance = balance
 
     def deposit(self, amount):
-        """Пополнить счет."""
         self.balance += amount - (amount * 0.01)
     def withdraw(self, amount):
-        """Снять средства со счета."""
         if amount <= self.balance:
             self.balance -= amount + (amount * 0.01)
         else:
             print("Недостаточно средств на счете.")
 
     def get_balance(self):
-        """Получить баланс счета."""
         return self.balance
 
 
