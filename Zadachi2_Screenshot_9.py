@@ -5,15 +5,12 @@ class Product:
         self.quantity = quantity
 
     def increase_quantity(self, amount):
-        """Увеличить количество товара."""
         self.quantity += amount
 
     def decrease_quantity(self, amount):
-        """Уменьшить количество товара."""
         self.quantity -= amount
 
     def get_total_cost(self):
-        """Рассчитать общую стоимость товара."""
         return self.price * self.quantity
 
 product1 = Product("Яблоки", 17, 8)
